@@ -27,3 +27,14 @@ done
 echo "${flipValue[@]}"
 echo "Heads win $H Times"
 echo "Tails win $T Times"
+
+if [ $H -ge $T ]
+then
+	echo " Head is win with $H Times "
+elif [ $H -eq $T ]
+then
+	echo " Tie between Head and Tail"
+else
+	echo " Tail is win with $T Times "
+fi
+
